@@ -1,0 +1,92 @@
+.App {
+  min-height: 100%;
+  padding-top: 60px;
+  box-sizing: border-box; 
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.list_default{
+  width: 100%;
+  height: calc(100% - 60px);
+  padding-top: 160px;
+  box-sizing: border-box;
+}
+.list_default .logo{
+  width: 90px;
+  height: 90px;
+  background: url(./assets/images/github.png) center center no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  animation: logo-hover .6s linear;
+}
+.list_default .logo_anim{
+  animation: logo-hover .6s infinite linear;
+}
+.list_default .motto{
+  color: #42a6f5;
+  font-size: 14px;
+  width: 260px;
+  text-align: center;
+  margin: 0 auto;
+  animation: motto-hover 1s linear;
+}
+.load{
+  text-align: center;
+  color: #42a6f5;
+  animation: load-hover 1s infinite linear;
+}
+.infinite-scroll-component{
+  overflow: hidden !important;
+}
+.to_top{
+  width: 28px;
+  height: 28px;
+  border-radius: 50%; 
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  border: none;
+  padding: 0;
+  background: url(./assets/images/top.png) center center no-repeat #42a6f5;
+  background-size: 26px;
+  outline: none;
+}
+
+@keyframes motto-hover {
+  from { transform: rotateX(90deg); }
+  to { transform: rotateX(0deg); }
+}
+@keyframes logo-hover {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(180deg); }
+}
+@keyframes load-hover {
+  0% {
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(1.2)
+  }
+  100%{
+    transform: scale(1)
+  }
+}
