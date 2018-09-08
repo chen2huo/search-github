@@ -14,7 +14,7 @@ class App extends Component {
       keyword: '',
       pageSize: 14,
       pageNum: 1,
-      loadBool: false
+      loadBool: false,
     },
     this.search = keyword => {
       if(!keyword||this.state.loadBool) return
